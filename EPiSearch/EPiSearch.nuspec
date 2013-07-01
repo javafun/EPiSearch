@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+    <metadata>
+        <id>EPiSearch</id>
+        <version>0.1-beta</version>
+        <authors>Pavel Nezhencev</authors>
+        <projectUrl>https://github.com/whyleee/EPiSearch</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Better search for EPiServer based on Full Text Search service: better previews, special characters support, exclusion of not visible, not published or system pages and more.</description>
+        <releaseNotes>- Partial queries
+- Support for special characters
+- Exclusion of not visible, not published, expired, system and no-template pages</releaseNotes>
+        <tags>EPiServer full text search FTS better</tags>
+        <dependencies>
+            <dependency id="EPiServer.CMS.Core" version="7.0.586.1" />
+            <dependency id="EPiServer.Search" version="7.0.1764.8" />
+            <dependency id="Perks" version="1.3.1" />
+            <dependency id="HtmlAgilityPack" version="1.4" />
+        </dependencies>
+        <frameworkAssemblies>
+            <frameworkAssembly assemblyName="Microsoft.CSharp" targetFramework="" />
+            <frameworkAssembly assemblyName="System" targetFramework="" />
+            <frameworkAssembly assemblyName="System.Core" targetFramework="" />
+            <frameworkAssembly assemblyName="System.Configuration" targetFramework="" />
+            <frameworkAssembly assemblyName="System.Web" targetFramework="" />
+            <frameworkAssembly assemblyName="System.Xml" targetFramework="" />
+        </frameworkAssemblies>
+    </metadata>
+    <files>
+        <file src="net45\EPiSearch.dll" target="lib\net45\EPiSearch.dll" />
+    </files>
+</package>
