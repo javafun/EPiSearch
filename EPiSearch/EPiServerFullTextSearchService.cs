@@ -122,7 +122,7 @@ namespace EPiSearch
 
                 if (itemProp != null)
                 {
-                    var propValue = itemProp.GetValue(res.Item);
+                    var propValue = itemProp.GetValue(res.Item, null);
 
                     if (propValue is string && ((string) propValue).IsNotNullOrEmpty())
                     {
